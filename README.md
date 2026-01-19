@@ -9,8 +9,9 @@ logo_data.png should be 256x256 16 colors
 Using an old docker to compile:  
 `docker pull devkitpro/devkitarm:20180522`  
 `docker run -it --rm -v $(pwd):/source --user "$(id -u):$(id -g)" devkitpro/devkitarm:20180522 bash`  
+`cd libtonc && make && cd ../ && make`  
 
-Make 16kib:  
+Make it 16 KiB:  
 `truncate -s 16K gba_bios.bin`  
 
 ## Who, and why
