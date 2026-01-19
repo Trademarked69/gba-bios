@@ -1,6 +1,14 @@
 # gba-bios
 open-source GBA BIOS replacement
 
+## Building
+Making a new logo:  
+logo_data.png should be 256x256 16 colors  
+`grit logo_data.png -gB4 -p -pn16 -m -mLs -mh32 -mw32 -gzl -mzl -ftc`  
+Using an old docker to compile:  
+`docker pull devkitpro/devkitarm:20180522`  
+`docker run -it --rm -v $(pwd):/source --user "$(id -u):$(id -g)" devkitpro/devkitarm:20180522 bash`  
+
 ## Who, and why
 
 This replacement BIOS was (from what I can gather) made originally by the [VisualBoyAdvance-M](https://github.com/visualboyadvance-m/visualboyadvance-m/) folks, later modified by [Normmatt](https://github.com/Normmatt/).
