@@ -43,7 +43,7 @@ LDFLAGS	=	-nostartfiles -nostdlib -T ../specs/bios.ld -g $(ARCH) -Wl,-Map,$(TARG
 #---------------------------------------------------------------------------------
 # Setup some defines
 #---------------------------------------------------------------------------------
-LIBTONC := $(CURDIR)/../tonclib
+LIBTONC := $(CURDIR)/libtonc
 
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
