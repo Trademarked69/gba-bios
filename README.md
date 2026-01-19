@@ -10,7 +10,7 @@ Using an old docker to compile:
 `docker pull devkitpro/devkitarm:20180522`  
 `docker run -it --rm -v $(pwd):/source --user "$(id -u):$(id -g)" devkitpro/devkitarm:20180522 bash`  
 
-Make 16mb:  
+Make 16kib:  
 `truncate -s 16K gba_bios.bin`  
 
 ## Who, and why
